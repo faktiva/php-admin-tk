@@ -2,7 +2,8 @@
     "name": "dralbert/php-admin-tk",
     "description": "Simple wrapper around a bounce of tools intended to be installed on a web server vhost for administrative purposes",
     "type": "project",
-    "license": "proprietary",
+    "homepage": "https://github.com/drAlberT/php-admin-tk",
+    "license": "CC-BY-NC-SA-4.0",
     "authors": [
         {
             "name": "Emiliano Gabrielli",
