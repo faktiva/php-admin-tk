@@ -9,7 +9,7 @@ Installation:
 - just clone the repo into your vhost root directory (**not the document root**)
 
     ```
-    clone https://github.com/drAlberT/php-admin-tk .
+    composer create-project dralbert/php-admin-tk /var/www/your-admin-vhost [--ignore-platform-reqs]
     ```
 
 # License
