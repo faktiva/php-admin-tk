@@ -58,14 +58,14 @@
         ]
     },
     "require": {
-        "fabpot/php-cs-fixer": "^1.11",
         "amnuts/phperror-gui": "^1.0",
         "amnuts/opcache-gui": "^2.2",
         "mnsami/composer-custom-directory-installer": "^1.0",
         "sasanrose/phpredmin": "^1.0"
     },
     "require-dev": {
-        "symfony/debug": "^3.0",
-        "symfony/var-dumper": "^3.0"
+        "fabpot/php-cs-fixer": "^1.11",
+        "symfony/var-dumper": "^3.0",
+        "symfony/debug": "^3.0"
     }
 }
