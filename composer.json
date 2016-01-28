@@ -1,0 +1,70 @@
+{
+    "name": "dralbert/php-admin-tk",
+    "description": "Simple wrapper around a bounce of tools intended to be installed on a web server vhost for administrative purposes",
+    "type": "project",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Emiliano Gabrielli",
+            "email": "emiliano.gabrielli@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "config": {
+        "github-protocols": ["https"]
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "sasanrose/phpredmin",
+                "version": "1.0.0",
+                "source": {
+                    "url": "https://github.com/sasanrose/phpredmin.git",
+                    "type": "git",
+                    "reference": "v1.0.0"
+                }
+            }
+        }
+    ],
+    "extra": {
+        "installer-paths": {
+            "./httpdocs/tools/OPcache_GUI": ["amnuts/opcache-gui"],
+            "./httpdocs/tools/PHP_error_log": ["amnuts/phperror-gui"]
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "mkdir -p httpdocs/tools",
+            "@phpinfo-create",
+            "@phpmyadmin-create",
+            "@phperror-gui-index",
+            "@phpredmin-index"
+        ],
+
+        "phpinfo-create": [
+            "echo '<?php phpinfo();' > httpdocs/tools/PHP_info.php"
+        ],
+        "phpmyadmin-create": [
+            "cd httpdocs/tools/ ; ln -sf /usr/share/phpmyadmin phpMyAdmin"
+        ],
+        "phperror-gui-index": [
+            "cd httpdocs/tools/PHP_error_log ; ln -sf phperror-gui.php index.php"
+        ],
+        "phpredmin-index": [
+            "cd httpdocs/tools ; ln -sf ../../vendor/sasanrose/phpredmin/public/ ./Redis_admin"
+        ]
+    },
+    "require": {
+        "fabpot/php-cs-fixer": "^1.11",
+        "amnuts/phperror-gui": "^1.0",
+        "amnuts/opcache-gui": "^2.2",
+        "mnsami/composer-custom-directory-installer": "^1.0",
+        "sasanrose/phpredmin": "^1.0"
+    },
+    "require-dev": {
+        "symfony/debug": "^3.0",
+        "symfony/var-dumper": "^3.0"
+    }
+}
