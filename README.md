@@ -19,4 +19,4 @@ Installation:
 
 **[php-admin-tk](https://github.com/drAlberT/php-admin-tk)** by [drAlberT](https://github.com/drAlberT) is licensed under a **Creative Commons [Attribution-NonCommercial-ShareAlike](http://creativecommons.org/licenses/by-nc-sa/4.0/) 4.0 International License**.
 
-Permissions beyond the scope of this license may be available contacting us at emiliano.gabrielli@gmail.com
+Permissions beyond the scope of this license may be available contacting the author
