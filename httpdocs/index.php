@@ -19,6 +19,8 @@ natcasesort($tools);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico">
     <title><?php echo getenv('HOSTNAME') ?> admin console</title>
     <style type="text/css">
         * { margin:0; padding:0 }
@@ -44,7 +46,7 @@ natcasesort($tools);
 </head>
 <body>
     <header>
-        <h1><span class="server-name"><?php echo getenv('HOSTNAME') ?></span> admin console</h1>
+        <h1><span class="server-name"><?php echo php_uname('n') ?></span> admin console</h1>
         <nav>
             <ul>
                 <?php foreach ($tools as $tool): ?>
@@ -53,7 +55,7 @@ natcasesort($tools);
             </ul>
         </nav>
     </header>
-    <iframe id="appframe" src="" frameborder="0" scrolling="auto" onload="resizeIframe(this);"></iframe>
+    <iframe id="appframe" src="" frameborder="0" scrolling="auto" onload="resizeIframe(this);" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
     <footer>
         <a id="github" href="https://github.com/dralbert/php-admin-tk" target="_blank">drAlberT/php-admin-tk</a>
     </footer>
