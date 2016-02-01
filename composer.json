@@ -48,13 +48,13 @@
             "echo '<?php phpinfo();' > httpdocs/tools/PHP_info.php"
         ],
         "phpmyadmin-create": [
-            "cd httpdocs/tools/ ; ln -sf /usr/share/phpmyadmin phpMyAdmin"
+            "cd httpdocs/tools/ ; ln -sf -T /usr/share/phpmyadmin ./phpMyAdmin"
         ],
         "phperror-gui-index": [
-            "cd httpdocs/tools/PHP_error_log ; ln -sf phperror-gui.php index.php"
+            "cd httpdocs/tools/PHP_error_log ; ln -sf ./phperror-gui.php ./index.php"
         ],
         "phpredmin-index": [
-            "cd httpdocs/tools ; ln -sf ../../vendor/sasanrose/phpredmin/public/ ./Redis_admin"
+            "cd httpdocs/tools ; ln -sf -T ../../vendor/sasanrose/phpredmin/public/ ./Redis_admin"
         ]
     },
     "require": {
