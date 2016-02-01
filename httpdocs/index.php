@@ -19,6 +19,8 @@ natcasesort($tools);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico">
     <title><?php echo getenv('HOSTNAME') ?> admin console</title>
     <style type="text/css">
         * { margin:0; padding:0 }
