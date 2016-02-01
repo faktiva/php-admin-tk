@@ -55,7 +55,7 @@ natcasesort($tools);
             </ul>
         </nav>
     </header>
-    <iframe id="appframe" src="" frameborder="0" scrolling="auto" onload="resizeIframe(this);"></iframe>
+    <iframe id="appframe" src="" frameborder="0" scrolling="auto" onload="resizeIframe(this);" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
     <footer>
         <a id="github" href="https://github.com/dralbert/php-admin-tk" target="_blank">drAlberT/php-admin-tk</a>
     </footer>
