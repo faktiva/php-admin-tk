@@ -46,7 +46,7 @@ natcasesort($tools);
 </head>
 <body>
     <header>
-        <h1><span class="server-name"><?php echo getenv('HOSTNAME') ?></span> admin console</h1>
+        <h1><span class="server-name"><?php echo php_uname('n') ?></span> admin console</h1>
         <nav>
             <ul>
                 <?php foreach ($tools as $tool): ?>
