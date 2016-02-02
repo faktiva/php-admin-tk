@@ -42,6 +42,15 @@ natcasesort($tools);
             obj.style.height = 0 + 'px';
             obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
         }
+
+        function fixIframeTarget(obj) {
+            anchors = obj.contentDocument.links;
+            for (j = 0; j < anchors.length; ++j) {
+                if ('_blank' == anchors[j].getAttribute('target')) {
+                    anchors[j].setAttribute('target', '_self');
+                }
+            }
+        }
     </script>
 </head>
 <body>
@@ -55,7 +64,7 @@ natcasesort($tools);
             </ul>
         </nav>
     </header>
-    <iframe id="appframe" src="" frameborder="0" scrolling="auto" onload="resizeIframe(this);" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
+    <iframe id="appframe" src="" frameborder="0" scrolling="auto" onload="fixIframeTarget(this); resizeIframe(this);" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
     <footer>
         <a id="github" href="https://github.com/dralbert/php-admin-tk" target="_blank">drAlberT/php-admin-tk</a>
     </footer>
