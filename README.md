@@ -7,24 +7,41 @@ Intended to be installed on a web server vhost for administrative purposes. Work
 
 ___
 
-## What we are using
+## What's it?
 
 This project will install and made available at a glance a number of open source tools that every sysadmin would like to have on his PHP-based web server:
 
-- **[phpinfo()](http://php.net/manual/en/function.phpinfo.php)**:
-  access the output of the PHP built-in `phpinfo()` function
+- **[phpinfo()](http://php.net/manual/en/function.phpinfo.php)**
 
-- **[Adminer](https://github.com/vrana/adminer)**:
-  a fully featured **Database management** in a single PHP file supporting _MySQL_, _PostgreSQL_, _SQLite_, _MS SQL_, _Oracle_, _SimpleDB_, _Elasticsearch_
+  Access the output of the PHP built-in `phpinfo()` function
 
-- **[phperror-gui](https://github.com/amnuts/phperror-gui)**:
-  a clean and effective single-file GUI for viewing entries in the **PHP error log**, allowing for filtering by path and by type.
+- **[Adminer](https://github.com/vrana/adminer)**
 
-- **[opcache-gui](https://github.com/amnuts/opcache-gui)**:
-  a clean and responsive **interface for Zend OPcache** information, showing statistics, settings and cached files, and providing a real-time update for the information (using jQuery and React).
+  A fully featured **Database management** in a single PHP file supporting _MySQL_, _PostgreSQL_, _SQLite_, _MS SQL_, _Oracle_, _SimpleDB_, _Elasticsearch_
 
-- **[PHPRedMin](https://github.com/sasanrose/phpredmin)**:
-  a simple web interface to **manage and monitor Redis**.
+  ![](https://www.adminer.org/static/screenshots/table.png)
+- **[phperror-gui](https://github.com/amnuts/phperror-gui)**
+  
+  A clean and effective single-file GUI for viewing entries in the **PHP error log**, allowing for filtering by path and by type.
+
+  ![phperror-gui](http://amnuts.com/images/phperror/screenshot/usage.png)
+
+- **[opcache-gui](https://github.com/amnuts/opcache-gui)**
+
+  A clean and responsive **interface for Zend OPcache** information, showing statistics, settings and cached files, and providing a real-time update for the information (using jQuery and React).
+
+  ![opcache-gui](http://amnuts.com/images/opcache/screenshot/overview-v2.1.1.png)
+  
+- **[PHPRedMin](https://github.com/sasanrose/phpredmin)**
+
+  A simple web interface to **manage and monitor Redis**.
+
+  ![](http://dl.dropbox.com/u/5413590/phpredmin/hashresult.jpg)
+  ![](http://dl.dropbox.com/u/5413590/phpredmin/zsetresult.jpg)
+  ![](http://dl.dropbox.com/u/5413590/phpredmin/bulk-delete.png)
+  ![](http://dl.dropbox.com/u/5413590/phpredmin/bulk-delete-progress.png)
+
+___
 
 ## Installation
 
