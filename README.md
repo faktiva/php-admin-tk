@@ -1,11 +1,32 @@
-# php-admin-tk
+php-admin-tk
+============
+
 A simple wrapper around a bounce of tools.
 
 Intended to be installed on a web server vhost for administrative purposes. Works as a glue around every-day-use tools
 
 ___
 
-## Installation:
+## What we are using
+
+This project will install and made available at a glance a number of open source tools that every sysadmin would like to have on his PHP-based web server:
+
+- **[phpinfo()](http://php.net/manual/en/function.phpinfo.php)**:
+  access the output of the PHP built-in `phpinfo()` function
+
+- **[Adminer](https://github.com/vrana/adminer)**:
+  a fully featured **Database management** in a single PHP file supporting _MySQL_, _PostgreSQL_, _SQLite_, _MS SQL_, _Oracle_, _SimpleDB_, _Elasticsearch_
+
+- **[phperror-gui](https://github.com/amnuts/phperror-gui)**:
+  a clean and effective single-file GUI for viewing entries in the **PHP error log**, allowing for filtering by path and by type.
+
+- **[opcache-gui](https://github.com/amnuts/opcache-gui)**:
+  a clean and responsive **interface for Zend OPcache** information, showing statistics, settings and cached files, and providing a real-time update for the information (using jQuery and React).
+
+- **[PHPRedMin](https://github.com/sasanrose/phpredmin)**:
+  a simple web interface to **manage and monitor Redis**.
+
+## Installation
 
 ### Using composer
 
@@ -28,7 +49,7 @@ ___
 Enjoy ;)
   
 
-# License
+## License
 
 ![Creative Commons BY-NC-SA License](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)
 
