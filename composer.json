@@ -67,8 +67,7 @@
             "cd httpdocs/tools/PHP_error_log ; ln -sf ./phperror-gui.php ./index.php"
         ],
         "adminer": [
-            "mkdir httpdocs/tools/Adminer",
-            "cd httpdocs/tools/Adminer ; ln -sf -T ../../../vendor/vrana/adminer/adminer*.php ./index.php"
+            "cd httpdocs/tools ; ln -sf -T ../../vendor/vrana/adminer/adminer*.php ./Adminer.php"
         ],
         "phpredmin-index": [
             "cd httpdocs/tools ; ln -sf -T ../../vendor/sasanrose/phpredmin/public/ ./Redis_admin"
@@ -82,7 +81,7 @@
         "vrana/adminer": "^4.2"
     },
     "require-dev": {
-        "fabpot/php-cs-fixer": "^1.11",
+        "friendsofphp/php-cs-fixer": "^1.11",
         "symfony/var-dumper": "^3.0",
         "symfony/debug": "^3.0"
     }
