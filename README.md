@@ -10,14 +10,17 @@ ___
 ### Using composer
 
 - download the project into your vhost root directory (**not the document root, it has to be set to httpdocs**)
+
     ```
     composer create-project dralbert/php-admin-tk /var/www/your-admin-vhost
     ```
 - cd inside the project root
+
     ```
     cd /var/www/your-admin-vhost
     ```
 - run composer install
+
     ```
     composer install --no-dev
     ```
