@@ -3,14 +3,27 @@ A simple wrapper around a bounce of tools.
 
 Intended to be installed on a web server vhost for administrative purposes. Works as a glue around every-day-use tools
 
-Installation:
----
+___
 
-- just clone the repo into your vhost root directory (**not the document root**)
+## Installation:
 
+### Using composer
+
+- download the project into your vhost root directory (**not the document root, it has to be set to httpdocs**)
     ```
-    composer create-project [--ignore-platform-reqs] dralbert/php-admin-tk /var/www/your-admin-vhost
+    composer create-project dralbert/php-admin-tk /var/www/your-admin-vhost
     ```
+- cd inside the project root
+    ```
+    cd /var/www/your-admin-vhost
+    ```
+- run composer install
+    ```
+    composer install --no-dev
+    ```
+    
+Enjoy ;)
+  
 
 # License
 
