@@ -8,11 +8,11 @@
 ini_set('display_errors', 1);
 ini_set('log_errors', 1);
 
-define('TOOLS_URI', '/tools');
 define('ROOT_DIR', __DIR__);
-define(TOOLS_DIR, sprintf('%s/%s', ROOT_DIR, rtrim(TOOLS_URI, '/')));
+define('TOOLS_URI', '/tools');
+define('TOOLS_DIR', sprintf('%s/%s', ROOT_DIR, rtrim(TOOLS_URI, '/')));
 
-$bootstrap = ROOT_DIR.'/../vendor/autoload.php';
+$bootstrap = dirname(ROOT_DIR).'/vendor/autoload.php';
 if (file_exists($bootstrap)) {
     require_once $bootstrap;
 }

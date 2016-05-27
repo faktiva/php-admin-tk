@@ -27,6 +27,22 @@
                     "reference": "v1.0.0"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "vrana/adminer",
+                "version": "4.2.4",
+                "dist": {
+                    "url": "https://www.adminer.org/static/download/4.2.4/adminer-4.2.4.php",
+                    "type": "file"
+                },
+                "source": {
+                    "url": "https://github.com/vrana/adminer",
+                    "type": "git",
+                    "reference": "releases/tag/v4.2.4"
+                }
+            }
         }
     ],
     "extra": {
@@ -39,29 +55,31 @@
         "post-install-cmd": [
             "mkdir -p httpdocs/tools",
             "@phpinfo-create",
-            "@phpmyadmin-create",
             "@phperror-gui-index",
+            "@adminer",
             "@phpredmin-index"
         ],
 
         "phpinfo-create": [
             "echo '<?php phpinfo();' > httpdocs/tools/PHP_info.php"
         ],
-        "phpmyadmin-create": [
-            "cd httpdocs/tools/ ; ln -sf -T /usr/share/phpmyadmin ./phpMyAdmin"
-        ],
         "phperror-gui-index": [
             "cd httpdocs/tools/PHP_error_log ; ln -sf ./phperror-gui.php ./index.php"
+        ],
+        "adminer": [
+            "mkdir httpdocs/tools/Adminer",
+            "cd httpdocs/tools/Adminer ; ln -sf -T ../../../vendor/vrana/adminer/adminer*.php ./index.php"
         ],
         "phpredmin-index": [
             "cd httpdocs/tools ; ln -sf -T ../../vendor/sasanrose/phpredmin/public/ ./Redis_admin"
         ]
     },
     "require": {
+        "mnsami/composer-custom-directory-installer": "^1.0",
         "amnuts/phperror-gui": "^1.0",
         "amnuts/opcache-gui": "^2.2",
-        "mnsami/composer-custom-directory-installer": "^1.0",
-        "sasanrose/phpredmin": "^1.0"
+        "sasanrose/phpredmin": "^1.0",
+        "vrana/adminer": "^4.2"
     },
     "require-dev": {
         "fabpot/php-cs-fixer": "^1.11",
