@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2e5000461de437f9bd1611c93678ef49",
-    "content-hash": "a0ac073685469e7c0f7f5a84c14b9b10",
+    "hash": "d37c6c6b0eca6389d8fba6d340647e68",
+    "content-hash": "a3dd38f5dc32a43eba75160f09c41cc1",
     "packages": [
         {
             "name": "amnuts/opcache-gui",
@@ -167,16 +167,16 @@
         },
         {
             "name": "vrana/adminer",
-            "version": "4.2.4",
+            "version": "4.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vrana/adminer",
-                "reference": "releases/tag/v4.2.4"
+                "reference": "releases/tag/v4.2.5"
             },
             "dist": {
                 "type": "file",
-                "url": "https://www.adminer.org/static/download/4.2.4/adminer-4.2.4.php",
-                "reference": "releases/tag/v4.2.4",
+                "url": "https://www.adminer.org/static/download/4.2.5/adminer-4.2.5.php",
+                "reference": null,
                 "shasum": null
             },
             "type": "library"
