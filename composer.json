@@ -44,15 +44,15 @@
             "type": "package",
             "package": {
                 "name": "vrana/adminer",
-                "version": "4.2.4",
+                "version": "4.2.5",
                 "dist": {
-                    "url": "https://www.adminer.org/static/download/4.2.4/adminer-4.2.4.php",
+                    "url": "https://www.adminer.org/static/download/4.2.5/adminer-4.2.5.php",
                     "type": "file"
                 },
                 "source": {
                     "url": "https://github.com/vrana/adminer",
                     "type": "git",
-                    "reference": "releases/tag/v4.2.4"
+                    "reference": "releases/tag/v4.2.5"
                 }
             }
         }
