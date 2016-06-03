@@ -1,11 +1,18 @@
 php-admin-tk
 ============
 
+___
+
+[![Packagist](https://img.shields.io/packagist/l/zizuu-store/zzcleanurls.svg?style=plastic)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![GitHub release](https://img.shields.io/github/release/ZiZuu-store/zzCleanURLs.svg?style=plastic&label=latest)](https://github.com/ZiZuu-store/zzCleanURLs/releases/latest)
+[![Dependency Status](https://www.versioneye.com/user/projects/57518a5e7757a00034dc3b16/badge.svg)](https://www.versioneye.com/user/projects/57518a5e7757a00034dc3b16)
+
+___
+
 A simple wrapper around a bounce of tools.
 
 Intended to be installed on a web server vhost for administrative purposes. Works as a glue around every-day-use tools
 
-___
 
 ## What's it?
 
