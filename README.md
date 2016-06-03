@@ -1,3 +1,10 @@
+
+
+[![Packagist](https://img.shields.io/packagist/l/drAlberT/php-admin-tk.svg?style=flat)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![GitHub release](https://img.shields.io/github/release/drAlberT/php-admin-tk.svg?style=flat&label=latest)](https://github.com/drAlberT/php-admin-tk/releases/latest)
+[![Dependency Status](https://www.versioneye.com/user/projects/57518a5e7757a00034dc3b16/badge.svg?style=flat)](https://www.versioneye.com/user/projects/57518a5e7757a00034dc3b16)
+
+
 php-admin-tk
 ============
 
@@ -5,7 +12,6 @@ A simple wrapper around a bounce of tools.
 
 Intended to be installed on a web server vhost for administrative purposes. Works as a glue around every-day-use tools
 
-___
 
 ## What's it?
 
@@ -21,7 +27,7 @@ This project will install and made available at a glance a number of open source
 
   ![](https://www.adminer.org/static/screenshots/table.png)
 - **[phperror-gui](https://github.com/amnuts/phperror-gui)**
-  
+
   A clean and effective single-file GUI for viewing entries in the **PHP error log**, allowing for filtering by path and by type.
 
   ![phperror-gui](http://amnuts.com/images/phperror/screenshot/usage.png)
@@ -31,7 +37,7 @@ This project will install and made available at a glance a number of open source
   A clean and responsive **interface for Zend OPcache** information, showing statistics, settings and cached files, and providing a real-time update for the information (using jQuery and React).
 
   ![opcache-gui](http://amnuts.com/images/opcache/screenshot/overview-v2.1.1.png)
-  
+
 - **[PHPRedMin](https://github.com/sasanrose/phpredmin)**
 
   A simple web interface to **manage and monitor Redis**.
@@ -62,9 +68,9 @@ ___
     ```
     composer install --no-dev
     ```
-    
+
 Enjoy ;)
-  
+
 
 ## License
 
