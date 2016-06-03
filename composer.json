@@ -31,6 +31,18 @@
         {
             "type": "package",
             "package": {
+                "name": "hgschmie/phpmemcacheadmin",
+                "version": "1.2.2",
+                "source": {
+                    "url": "https://github.com/hgschmie/phpmemcacheadmin",
+                    "type": "git",
+                    "reference": "7f935bf"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
                 "name": "vrana/adminer",
                 "version": "4.2.4",
                 "dist": {
@@ -57,7 +69,8 @@
             "@phpinfo-create",
             "@phperror-gui-index",
             "@adminer",
-            "@phpredmin-index"
+            "@phpredmin-index",
+            "@phpmemcacheadmin"
         ],
 
         "phpinfo-create": [
@@ -67,11 +80,13 @@
             "cd httpdocs/tools/PHP_error_log ; ln -sf ./phperror-gui.php ./index.php"
         ],
         "adminer": [
-            "mkdir httpdocs/tools/Adminer",
-            "cd httpdocs/tools/Adminer ; ln -sf -T ../../../vendor/vrana/adminer/adminer*.php ./index.php"
+            "cd httpdocs/tools ; ln -sf -T ../../vendor/vrana/adminer/adminer*.php ./Adminer.php"
         ],
         "phpredmin-index": [
             "cd httpdocs/tools ; ln -sf -T ../../vendor/sasanrose/phpredmin/public/ ./Redis_admin"
+        ],
+        "phpmemcacheadmin": [
+            "cd httpdocs/tools ; ln -sf -T ../../vendor/hgschmie/phpmemcacheadmin/ ./phpMemcachedAdmin"
         ]
     },
     "require": {
@@ -79,10 +94,11 @@
         "amnuts/phperror-gui": "^1.0",
         "amnuts/opcache-gui": "^2.2",
         "sasanrose/phpredmin": "^1.0",
-        "vrana/adminer": "^4.2"
+        "vrana/adminer": "^4.2",
+        "hgschmie/phpmemcacheadmin": "^1.2.2"
     },
     "require-dev": {
-        "fabpot/php-cs-fixer": "^1.11",
+        "friendsofphp/php-cs-fixer": "^1.11",
         "symfony/var-dumper": "^3.0",
         "symfony/debug": "^3.0"
     }
