@@ -1,12 +1,9 @@
 php-admin-tk
 ============
 
-___
-
-[![Packagist](https://img.shields.io/packagist/l/zizuu-store/zzcleanurls.svg?style=plastic)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![GitHub release](https://img.shields.io/github/release/ZiZuu-store/zzCleanURLs.svg?style=plastic&label=latest)](https://github.com/ZiZuu-store/zzCleanURLs/releases/latest)
-[![Dependency Status](https://www.versioneye.com/user/projects/57518a5e7757a00034dc3b16/badge.svg)](https://www.versioneye.com/user/projects/57518a5e7757a00034dc3b16)
-
+[![Packagist](https://img.shields.io/packagist/l/drAlberT/php-admin-tk.svg?style=flat)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![GitHub release](https://img.shields.io/github/release/drAlberT/php-admin-tk.svg?style=flat&label=latest)](https://github.com/drAlberT/php-admin-tk/releases/latest)
+[![Dependency Status](https://www.versioneye.com/user/projects/57518a5e7757a00034dc3b16/badge.svg?style=flat)](https://www.versioneye.com/user/projects/57518a5e7757a00034dc3b16)
 ___
 
 A simple wrapper around a bounce of tools.
