@@ -13,7 +13,10 @@
     ],
     "minimum-stability": "stable",
     "config": {
-        "github-protocols": ["https"]
+        "github-protocols": ["https"],
+		"archive-format": "zip",
+		"platform": {"php": "5.4.0"},
+		"optimize-autoloader": true
     },
     "repositories": [
         {
@@ -66,23 +69,23 @@
     "scripts": {
         "post-install-cmd": [
             "mkdir -p httpdocs/tools",
-            "@phpinfo-create",
-            "@phperror-gui-index",
+            "@phpinfo",
+            "@phperrorgui",
             "@adminer",
-            "@phpredmin-index",
+            "@phpredmin",
             "@phpmemcacheadmin"
         ],
 
-        "phpinfo-create": [
+        "phpinfo": [
             "echo '<?php phpinfo();' > httpdocs/tools/PHP_info.php"
         ],
-        "phperror-gui-index": [
+        "phperrorgui": [
             "cd httpdocs/tools/PHP_error_log ; ln -sf ./phperror-gui.php ./index.php"
         ],
         "adminer": [
             "cd httpdocs/tools ; ln -sf -T ../../vendor/vrana/adminer/adminer*.php ./Adminer.php"
         ],
-        "phpredmin-index": [
+        "phpredmin": [
             "cd httpdocs/tools ; ln -sf -T ../../vendor/sasanrose/phpredmin/public/ ./Redis_admin"
         ],
         "phpmemcacheadmin": [
@@ -90,6 +93,7 @@
         ]
     },
     "require": {
+		"php": ">=5.4.0",
         "mnsami/composer-custom-directory-installer": "^1.0",
         "amnuts/phperror-gui": "^1.0",
         "amnuts/opcache-gui": "^2.2",
@@ -99,7 +103,7 @@
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^1.11",
-        "symfony/var-dumper": "^3.0",
-        "symfony/debug": "^3.0"
+        "symfony/var-dumper": "^2.8|^3.0",
+        "symfony/debug": "^2.8|^3.0"
     }
 }
