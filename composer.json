@@ -68,7 +68,7 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "mkdir -p httpdocs/tools",
+            "php -r 'mkdir(__DIR__.\"/httpdocs/tools\", 0777, true);'",
             "@phpinfo",
             "@phperrorgui",
             "@adminer",
@@ -80,17 +80,17 @@
             "php -r 'file_put_contents(__DIR__.\"/httpdocs/tools/PHP_info.php\", \"<?php phpinfo();\n\");'"
         ],
         "phperrorgui": [
-            "cd httpdocs/tools/PHP_error_log ; ln -sf ./phperror-gui.php ./index.php"
+            "php -r 'chdir(__DIR__.\"/httpdocs/tools/PHP_error_log\"); @symlink(\"phperror-gui.php\", \"index.php\");'"
         ],
         "adminer": [
-            "cd httpdocs/tools ; ln -sf -T ../../vendor/vrana/adminer/adminer*.php ./Adminer.php",
+            "php -r 'chdir(__DIR__.\"/httpdocs/tools\"); @symlink(array_shift(glob(\"../../vendor/vrana/adminer/adminer*.php\")), \"Adminer.php\");'",
             "php -r '$f=__DIR__.\"/httpdocs/tools/Adminer.php\"; $c=file_get_contents($f); $c=preg_replace(\"#(header\\(\\\"X-Frame-Options: deny\\\"\\);)#\", \"/*XXX $1 */\", $c); file_put_contents($f, $c);'"
         ],
         "phpredmin": [
-            "cd httpdocs/tools ; ln -sf -T ../../vendor/sasanrose/phpredmin/public/ ./Redis_admin"
+            "php -r 'chdir(__DIR__.\"/httpdocs/tools\"); @symlink(\"../../vendor/sasanrose/phpredmin/public/\", \"Redis_admin\");'"
         ],
         "phpmemcacheadmin": [
-            "cd httpdocs/tools ; ln -sf -T ../../vendor/hgschmie/phpmemcacheadmin/ ./phpMemcachedAdmin"
+            "php -r 'chdir(__DIR__.\"/httpdocs/tools\"); @symlink(\"../../vendor/hgschmie/phpmemcacheadmin/\", \"phpMemcachedAdmin\");'"
         ]
     },
     "require": {
