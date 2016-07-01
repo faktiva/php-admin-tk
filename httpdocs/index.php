@@ -53,7 +53,7 @@ natcasesort($tools);
                     link.setAttribute('target', '_self');
                 }
                 // Fix protocol
-                url = link.getAttribute('href').replace(/^http:\/\//i, 'https://');
+                url = link.getAttribute('href').replace(/^(?:http:)?\/\//i, 'https://');
                 link.setAttribute('href', url);
             }
         }

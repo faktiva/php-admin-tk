@@ -84,7 +84,7 @@
         ],
         "adminer": [
             "php -r 'chdir(__DIR__.\"/httpdocs/tools\"); @symlink(array_shift(glob(\"../../vendor/vrana/adminer/adminer*.php\")), \"Adminer.php\");'",
-            "php -r '$f=__DIR__.\"/httpdocs/tools/Adminer.php\"; $c=file_get_contents($f); $c=preg_replace(\"#(header\\(\\\"X-Frame-Options: deny\\\"\\);)#\", \"/*XXX $1 */\", $c); file_put_contents($f, $c);'"
+            "php -r '$f=__DIR__.\"/httpdocs/tools/Adminer.php\"; $c=file_get_contents($f); $c=preg_replace(\"#(header\\(\\\"X-Frame-Options: deny\\\"\\);)#\", \"\", $c); file_put_contents($f, $c);'"
         ],
         "phpredmin": [
             "php -r 'chdir(__DIR__.\"/httpdocs/tools\"); @symlink(\"../../vendor/sasanrose/phpredmin/public/\", \"Redis_admin\");'"
