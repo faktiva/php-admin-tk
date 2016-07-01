@@ -14,9 +14,9 @@
     "minimum-stability": "stable",
     "config": {
         "github-protocols": ["https"],
-		"archive-format": "zip",
-		"platform": {"php": "5.4.0"},
-		"optimize-autoloader": true
+        "archive-format": "zip",
+        "platform": {"php": "5.4.0"},
+        "optimize-autoloader": true
     },
     "repositories": [
         {
@@ -77,13 +77,14 @@
         ],
 
         "phpinfo": [
-            "echo '<?php phpinfo();' > httpdocs/tools/PHP_info.php"
+            "php -r 'file_put_contents(__DIR__.\"/httpdocs/tools/PHP_info.php\", \"<?php phpinfo();\n\");'"
         ],
         "phperrorgui": [
             "cd httpdocs/tools/PHP_error_log ; ln -sf ./phperror-gui.php ./index.php"
         ],
         "adminer": [
-            "cd httpdocs/tools ; ln -sf -T ../../vendor/vrana/adminer/adminer*.php ./Adminer.php"
+            "cd httpdocs/tools ; ln -sf -T ../../vendor/vrana/adminer/adminer*.php ./Adminer.php",
+            "php -r '$f=__DIR__.\"/httpdocs/tools/Adminer.php\"; $c=file_get_contents($f); $c=preg_replace(\"#(header\\(\\\"X-Frame-Options: deny\\\"\\);)#\", \"/*XXX $1 */\", $c); file_put_contents($f, $c);'"
         ],
         "phpredmin": [
             "cd httpdocs/tools ; ln -sf -T ../../vendor/sasanrose/phpredmin/public/ ./Redis_admin"
@@ -93,7 +94,7 @@
         ]
     },
     "require": {
-		"php": ">=5.4.0",
+        "php": ">=5.4.0",
         "mnsami/composer-custom-directory-installer": "^1.0",
         "amnuts/phperror-gui": "^1.0",
         "amnuts/opcache-gui": "^2.2",
