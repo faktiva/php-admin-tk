@@ -12,9 +12,6 @@ define('ROOT_DIR', __DIR__);
 define('TOOLS_URI', '/tools');
 define('TOOLS_DIR', sprintf('%s/%s', ROOT_DIR, rtrim(TOOLS_URI, '/')));
 
-$bootstrap = dirname(ROOT_DIR).'/vendor/autoload.php';
-if (file_exists($bootstrap)) {
-    require_once $bootstrap;
-}
-
 umask(0);
+
+require_once dirname(ROOT_DIR).'/vendor/autoload.php';
