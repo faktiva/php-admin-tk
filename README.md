@@ -1,8 +1,13 @@
 
 
-[![Packagist](https://img.shields.io/packagist/l/drAlberT/php-admin-tk.svg?style=flat)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![GitHub release](https://img.shields.io/github/release/drAlberT/php-admin-tk.svg?style=flat&label=latest)](https://github.com/drAlberT/php-admin-tk/releases/latest)
+
+[![Latest Stable Version](https://poser.pugx.org/dralbert/php-admin-tk/v/stable)](https://packagist.org/packages/dralbert/php-admin-tk)
+[![Total Downloads](https://poser.pugx.org/dralbert/php-admin-tk/downloads)](https://packagist.org/packages/dralbert/php-admin-tk)
+[![Latest Unstable Version](https://poser.pugx.org/dralbert/php-admin-tk/v/unstable)](https://packagist.org/packages/dralbert/php-admin-tk)
 [![Dependency Status](https://www.versioneye.com/user/projects/57518a687757a0004a1ddc57/badge.svg?style=flat)](https://www.versioneye.com/user/projects/57518a687757a0004a1ddc57)
+[![composer.lock](https://poser.pugx.org/dralbert/php-admin-tk/composerlock)](https://packagist.org/packages/dralbert/php-admin-tk)
+[![License](https://poser.pugx.org/dralbert/php-admin-tk/license)](https://packagist.org/packages/dralbert/php-admin-tk) 
+
 
 php-admin-tk
 ============
