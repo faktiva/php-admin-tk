@@ -72,7 +72,7 @@ natcasesort($tools);
     </header>
     <iframe id="appframe" src="" frameborder="0" scrolling="auto" onload="fixLinks(this); resizeIframe(this);" sandbox="allow-same-origin allow-scripts allow-popups allow-modals allow-forms"></iframe>
     <footer>
-        <a id="github" href="https://github.com/dralbert/php-admin-tk" target="_blank">drAlberT/php-admin-tk</a>
+        <a id="github" href="https://github.com/faktiva/php-admin-tk" target="_blank">faktiva/php-admin-tk</a>
     </footer>
 </body>
 </html>
