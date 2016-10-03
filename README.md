@@ -1,12 +1,15 @@
 
 
-[![Packagist](https://img.shields.io/packagist/l/drAlberT/php-admin-tk.svg?style=flat)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![GitHub release](https://img.shields.io/github/release/drAlberT/php-admin-tk.svg?style=flat&label=latest)](https://github.com/drAlberT/php-admin-tk/releases/latest)
+[![Latest Stable Version](https://poser.pugx.org/faktiva/php-admin-tk/v/stable)](https://packagist.org/packages/faktiva/php-admin-tk)
+[![Total Downloads](https://poser.pugx.org/faktiva/php-admin-tk/downloads)](https://packagist.org/packages/faktiva/php-admin-tk)
+[![Latest Unstable Version](https://poser.pugx.org/faktiva/php-admin-tk/v/unstable)](https://packagist.org/packages/faktiva/php-admin-tk)
 [![Dependency Status](https://www.versioneye.com/user/projects/57518a687757a0004a1ddc57/badge.svg?style=flat)](https://www.versioneye.com/user/projects/57518a687757a0004a1ddc57)
+[![composer.lock](https://poser.pugx.org/faktiva/php-admin-tk/composerlock)](https://packagist.org/packages/faktiva/php-admin-tk)
+[![License](https://poser.pugx.org/faktiva/php-admin-tk/license)](https://packagist.org/packages/faktiva/php-admin-tk)
+
 
 php-admin-tk
 ============
-
 
 A simple wrapper around a bounce of tools.
 
@@ -56,7 +59,7 @@ ___
 - download the project into your vhost root directory (**not the document root, it has to be set to httpdocs**)
 
     ```
-    composer create-project dralbert/php-admin-tk /var/www/your-admin-vhost
+    composer create-project faktiva/php-admin-tk /var/www/your-admin-vhost
     ```
 - cd inside the project root
 
@@ -77,6 +80,6 @@ Enjoy ;)
 ![Creative Commons BY-NC-SA License](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)
 
 
-**[php-admin-tk](https://github.com/drAlberT/php-admin-tk)** by [drAlberT](https://github.com/drAlberT) is licensed under a **Creative Commons [Attribution-NonCommercial-ShareAlike](http://creativecommons.org/licenses/by-nc-sa/4.0/) 4.0 International License**.
+**[php-admin-tk](https://github.com/faktiva/php-admin-tk)** is licensed under a **Creative Commons [Attribution-NonCommercial-ShareAlike](http://creativecommons.org/licenses/by-nc-sa/4.0/) 4.0 International License**.
 
 Permissions beyond the scope of this license may be available contacting the author
