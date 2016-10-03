@@ -1,11 +1,11 @@
 
 
-[![Latest Stable Version](https://poser.pugx.org/faktiva/php-admin-tk/v/stable)](https://packagist.org/packages/faktiva/php-admin-tk)
-[![Total Downloads](https://poser.pugx.org/faktiva/php-admin-tk/downloads)](https://packagist.org/packages/faktiva/php-admin-tk)
-[![Latest Unstable Version](https://poser.pugx.org/faktiva/php-admin-tk/v/unstable)](https://packagist.org/packages/faktiva/php-admin-tk)
+[![Latest Stable Version](https://poser.pugx.org/faktiva/php-admin-tk/v/stable?format=flat)](https://packagist.org/packages/faktiva/php-admin-tk)
+[![Total Downloads](https://poser.pugx.org/faktiva/php-admin-tk/downloads?format=flat)](https://packagist.org/packages/faktiva/php-admin-tk)
+[![Latest Unstable Version](https://poser.pugx.org/faktiva/php-admin-tk/v/unstable?format=flat)](https://packagist.org/packages/faktiva/php-admin-tk)
 [![Dependency Status](https://www.versioneye.com/user/projects/57518a687757a0004a1ddc57/badge.svg?style=flat)](https://www.versioneye.com/user/projects/57518a687757a0004a1ddc57)
 [![composer.lock](https://poser.pugx.org/faktiva/php-admin-tk/composerlock)](https://packagist.org/packages/faktiva/php-admin-tk)
-[![License](https://poser.pugx.org/faktiva/php-admin-tk/license)](https://packagist.org/packages/faktiva/php-admin-tk)
+[![License](https://poser.pugx.org/faktiva/php-admin-tk/license?format=flat)](https://packagist.org/packages/faktiva/php-admin-tk)
 
 
 php-admin-tk
