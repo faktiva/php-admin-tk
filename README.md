@@ -3,7 +3,7 @@
 [![Latest Stable Version](https://poser.pugx.org/faktiva/php-admin-tk/v/stable?format=flat)](https://packagist.org/packages/faktiva/php-admin-tk)
 [![Total Downloads](https://poser.pugx.org/faktiva/php-admin-tk/downloads?format=flat)](https://packagist.org/packages/faktiva/php-admin-tk)
 [![Latest Unstable Version](https://poser.pugx.org/faktiva/php-admin-tk/v/unstable?format=flat)](https://packagist.org/packages/faktiva/php-admin-tk)
-[![Dependency Status](https://www.versioneye.com/user/projects/57f370c8823b88003a6d4c12/badge.svg?style=flat)](https://www.versioneye.com/user/projects/57f370c8823b88003a6d4c12)
+[![Dependencies Status](https://img.shields.io/librariesio/github/faktiva/php-admin-tk.svg?maxAge=3600)](https://libraries.io/github/faktiva/php-admin-tk)
 [![composer.lock](https://poser.pugx.org/faktiva/php-admin-tk/composerlock)](https://packagist.org/packages/faktiva/php-admin-tk)
 [![License](https://poser.pugx.org/faktiva/php-admin-tk/license?format=flat)](https://packagist.org/packages/faktiva/php-admin-tk)
 
