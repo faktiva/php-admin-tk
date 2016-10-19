@@ -48,10 +48,6 @@
             "package": {
                 "name": "vrana/adminer",
                 "version": "4.2.5",
-                "dist": {
-                    "url": "https://www.adminer.org/static/download/4.2.5/adminer-4.2.5.php",
-                    "type": "file"
-                },
                 "source": {
                     "url": "https://github.com/vrana/adminer",
                     "type": "git",
@@ -68,7 +64,7 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "php -r 'mkdir(__DIR__.\"/httpdocs/tools\", 0777, true);'",
+            "php -r '@mkdir(__DIR__.\"/httpdocs/tools\", 0777, true);'",
             "@phpinfo",
             "@phperrorgui",
             "@adminer",
@@ -77,7 +73,7 @@
         ],
 
         "phpinfo": [
-            "php -r 'file_put_contents(__DIR__.\"/httpdocs/tools/PHP_info.php\", \"<?php phpinfo();\n\");'"
+            "php -r 'file_put_contents(__DIR__.\"/httpdocs/tools/PHP_info.php\", \"<?php\n\nphpinfo();\n\");'"
         ],
         "phperrorgui": [
             "php -r 'chdir(__DIR__.\"/httpdocs/tools/PHP_error_log\"); @symlink(\"phperror-gui.php\", \"index.php\");'"

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0c95a0083db7bf78dd1fa46d68bd8c35",
-    "content-hash": "b968839348f5f28e92e6bc95fe73d22c",
+    "hash": "56b2c02f2952f6e01a655f8b0138825e",
+    "content-hash": "c0d8897a22ee6e03737d480e62d622c6",
     "packages": [
         {
             "name": "amnuts/opcache-gui",
