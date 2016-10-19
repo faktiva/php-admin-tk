@@ -23,11 +23,11 @@
             "type": "package",
             "package": {
                 "name": "sasanrose/phpredmin",
-                "version": "1.0.0",
+                "version": "1.1.1",
                 "source": {
                     "url": "https://github.com/sasanrose/phpredmin.git",
                     "type": "git",
-                    "reference": "v1.0.0"
+                    "reference": "v1.1.1"
                 }
             }
         },
