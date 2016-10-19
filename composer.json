@@ -3,7 +3,7 @@
     "description": "Simple wrapper around a bounce of tools intended to be installed on a web server vhost for administrative purposes",
     "type": "project",
     "homepage": "https://github.com/faktiva/php-admin-tk",
-    "license": "CC-BY-NC-SA-4.0",
+    "license": "CC-BY-SA-4.0",
     "authors": [
         {
             "name": "Emiliano Gabrielli",
