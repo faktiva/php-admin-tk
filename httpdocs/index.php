@@ -1,15 +1,15 @@
 <?php
 /*
- * Admin Vhost interface.
+ * Admin Tools Dashboard
  *
- * @author "Emiliano Gabrielli" <emiliano.gabrielli@gmail.com>
+ * @author "Emiliano Gabrielli" <albert@faktiva.com>
  */
 
 require __DIR__.'/config.inc.php';
 
 $tools = array_map(
-    function ($dir) {
-        return substr($dir, strlen(ROOT_DIR) + 1 /* trailing slash */);
+    function ($item) {
+        return substr($item, strlen(INSTALL_DIR) + 1 /* trailing slash */);
     },
     array_merge(glob(TOOLS_DIR.'/*', GLOB_ONLYDIR), glob(TOOLS_DIR.'/*.php'))
 );

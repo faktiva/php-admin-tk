@@ -1,17 +1,17 @@
 <?php
 /*
- * Admin Vhost interface.
+ * Admin Tools Dashboard
  *
- * @author "Emiliano Gabrielli" <emiliano.gabrielli@gmail.com>
+ * @author "Emiliano Gabrielli" <albert@faktiva.com>
  */
 
 ini_set('display_errors', 1);
 ini_set('log_errors', 1);
 
-define('ROOT_DIR', __DIR__);
-define('TOOLS_URI', '/tools');
-define('TOOLS_DIR', sprintf('%s/%s', ROOT_DIR, rtrim(TOOLS_URI, '/')));
+define('INSTALL_DIR', __DIR__);
+define('TOOLS_DIR', INSTALL_DIR.'/tools');
+define('TOOLS_URI', dirname($_SERVER['PHP_SELF']).'/tools');
 
 umask(0);
 
-require_once dirname(ROOT_DIR).'/vendor/autoload.php';
+require_once dirname(INSTALL_DIR).'/vendor/autoload.php';
