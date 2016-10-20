@@ -5,11 +5,11 @@
  * @author "Emiliano Gabrielli" <albert@faktiva.com>
  */
 
-require __DIR__.'/config.inc.php';
+require __DIR__.'/../config.inc.php';
 
 $tools = array_map(
     function ($item) {
-        return substr($item, strlen(INSTALL_DIR) + 1 /* trailing slash */);
+        return substr($item, strlen(BASE_DIR) + 1 /* trailing slash */);
     },
     array_merge(glob(TOOLS_DIR.'/*', GLOB_ONLYDIR), glob(TOOLS_DIR.'/*.php'))
 );
@@ -19,8 +19,8 @@ natcasesort($tools);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico">
+    <link rel="shortcut icon" href="<?php echo BASE_URI ?>/favicon.ico">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="<?php echo BASE_URI ?>/favicon.ico">
     <title><?php echo getenv('HOSTNAME') ?> admin console</title>
     <style type="text/css">
         * { margin:0; padding:0 }
