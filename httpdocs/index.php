@@ -9,7 +9,7 @@ require __DIR__.'/../config.inc.php';
 
 $tools = array_map(
     function ($item) {
-        return substr($item, strlen(BASE_DIR) + 1 /* trailing slash */);
+        return substr($item, strlen(BASE_DIR));
     },
     array_merge(glob(TOOLS_DIR.'/*', GLOB_ONLYDIR), glob(TOOLS_DIR.'/*.php'))
 );

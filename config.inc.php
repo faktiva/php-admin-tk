@@ -9,7 +9,7 @@ ini_set('display_errors', 1);
 ini_set('log_errors', 1);
 
 define('BASE_DIR', __DIR__.'/httpdocs');
-define('BASE_URI', dirname($_SERVER['PHP_SELF']));
+define('BASE_URI', rtrim(dirname($_SERVER['PHP_SELF']), '/'));
 
 define('TOOLS_DIR', BASE_DIR.'/tools');
 define('TOOLS_URI', BASE_URI.'/tools');
