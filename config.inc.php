@@ -5,8 +5,6 @@
  * @author "Emiliano Gabrielli" <albert@faktiva.com>
  */
 
-ini_set('display_errors', 1);
-ini_set('log_errors', 1);
 umask(0);
 
 require_once __DIR__.'/vendor/autoload.php';
