@@ -108,6 +108,7 @@
             "php -r '$f=__DIR__.\"/web/tools/Adminer.php\"; $c=file_get_contents($f); $c=preg_replace(\"#(header\\(\\\"X-Frame-Options: deny\\\"\\);)#\", \"\", $c); file_put_contents($f, $c);'"
         ],
         "redisadmin": [
+			"cd \"vendor/faktiva/php-redis-admin/\" ; php ../../../composer.phar -vv install",
             "php -r 'chdir(__DIR__.\"/web/tools\"); @symlink(\"../../vendor/faktiva/php-redis-admin/web/\", \"Redis_admin\");'",
             "php -r 'copy(__DIR__.\"/app/config/php-redis-admin.config.php\", __DIR__.\"/vendor/faktiva/php-redis-admin/app/config/config.php\");'"
         ],
