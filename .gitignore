@@ -1,2 +1,4 @@
-vendor
+vendor/
+bin/
+.php_cs.cache
 httpdocs/tools/**
