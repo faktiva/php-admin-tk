@@ -1,24 +1,28 @@
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/28ad1609-bdab-432b-b9a8-bc5e691ab2fb/small.png)](https://insight.sensiolabs.com/projects/28ad1609-bdab-432b-b9a8-bc5e691ab2fb)
+[Faktiva "PHP Admin ToolKit"](https://github.com/faktiva/php-admin-tk)
+===
 
+[![GitHub release](https://img.shields.io/github/release/faktiva/php-admin-tk.svg?style=flat&label=latest)](https://github.com/faktiva/php-admin-tk/releases/latest)
+[![Project Status](http://opensource.box.com/badges/active.svg?style=flat)](http://opensource.box.com/badges)
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/faktiva/php-admin-tk.svg?style=flat)](http://isitmaintained.com/project/faktiva/php-admin-tk "Percentage of issues still open")
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/faktiva/php-admin-tk.svg?style=flat)](http://isitmaintained.com/project/faktiva/php-admin-tk "Average time to resolve an issue")
+[![composer.lock](https://poser.pugx.org/faktiva/php-admin-tk/composerlock?style=flat)](https://packagist.org/packages/faktiva/php-admin-tk)
+[![Dependencies Status](https://img.shields.io/librariesio/github/faktiva/php-admin-tk.svg?maxAge=3600&style=flat)](https://libraries.io/github/faktiva/php-admin-tk)
+[![License](https://img.shields.io/packagist/l/faktiva/php-admin-tk.svg?style=flat)](https://creativecommons.org/licenses/by-sa/4.0/)
 
-[![Latest Stable Version](https://poser.pugx.org/faktiva/php-admin-tk/v/stable?format=flat)](https://packagist.org/packages/faktiva/php-admin-tk)
-[![Total Downloads](https://poser.pugx.org/faktiva/php-admin-tk/downloads?format=flat)](https://packagist.org/packages/faktiva/php-admin-tk)
-[![Latest Unstable Version](https://poser.pugx.org/faktiva/php-admin-tk/v/unstable?format=flat)](https://packagist.org/packages/faktiva/php-admin-tk)
-[![Dependencies Status](https://img.shields.io/librariesio/github/faktiva/php-admin-tk.svg?maxAge=3600)](https://libraries.io/github/faktiva/php-admin-tk)
-[![composer.lock](https://poser.pugx.org/faktiva/php-admin-tk/composerlock)](https://packagist.org/packages/faktiva/php-admin-tk)
-[![License](https://poser.pugx.org/faktiva/php-admin-tk/license?format=flat)](https://packagist.org/packages/faktiva/php-admin-tk)
+[![Join the chat at https://gitter.im/faktiva/php-admin-tk](https://img.shields.io/badge/Gitter-CHAT%20NOW-brightgreen.svg?style=flat)](https://gitter.im/faktiva/php-admin-tk)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/faktiva/php-admin-tk.svg?style=social)](https://twitter.com/intent/tweet?text=Fantastic #Faktiva "PHP Admin ToolKit"&url=https://github.com/faktiva/php-admin-tk)
 
+____
 
-php-admin-tk
-============
+**A simple wrapper around a bounce of tools.**
 
-A simple wrapper around a bounce of tools.
-
-Intended to be installed on a web server vhost for administrative purposes. Works as a glue around every-day-use tools
+Intended to be installed on a web server vhost for administrative purposes. Works as a glue around _every-day-use_ tools.
 
 
 ## What's it?
 
-This project will install and made available at a glance a number of open source tools that every sysadmin would like to have on his PHP-based web server:
+This project will install and made available at a glance a number of _open source tools_ that every sysadmin would like to have on his PHP-based web server:
 
 - **[phpinfo()](http://php.net/manual/en/function.phpinfo.php)**
 
