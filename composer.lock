@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0ae005595d41a747056dc61d8a86a53b",
-    "content-hash": "7f47779c97379ee7404ce48de004e90f",
+    "hash": "b5beecd19ea8ae83b934401d7afc8c5e",
+    "content-hash": "dab28928209f0516a72d885b3f59a977",
     "packages": [
         {
             "name": "amnuts/opcache-gui",
@@ -94,19 +94,20 @@
         },
         {
             "name": "faktiva/php-redis-admin",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/faktiva/php-redis-admin.git",
-                "reference": "5d90b4002b6b410bdbde8016b28d3c4077492f37"
+                "reference": "5c5902f6c2e41e6f4b4e64683e0924455e50df9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/faktiva/php-redis-admin/zipball/5d90b4002b6b410bdbde8016b28d3c4077492f37",
-                "reference": "5d90b4002b6b410bdbde8016b28d3c4077492f37",
+                "url": "https://api.github.com/repos/faktiva/php-redis-admin/zipball/5c5902f6c2e41e6f4b4e64683e0924455e50df9a",
+                "reference": "5c5902f6c2e41e6f4b4e64683e0924455e50df9a",
                 "shasum": ""
             },
             "require": {
+                "ext-redis": "*",
                 "php": ">=5.4.0"
             },
             "replace": {
@@ -118,6 +119,11 @@
                 "symfony/var-dumper": "^2.8|^3.0"
             },
             "type": "project",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause",
@@ -139,7 +145,7 @@
             ],
             "description": "PHP Redis Admin is a simple web interface to manage and monitor your Redis server(s).",
             "homepage": "https://github.com/faktiva/php-redis-admin",
-            "time": "2016-10-20 08:33:35"
+            "time": "2016-10-20 17:08:04"
         },
         {
             "name": "hgschmie/phpmemcacheadmin",

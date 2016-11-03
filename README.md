@@ -60,7 +60,7 @@ ___
 
 ### Using composer
 
-- download the project into your vhost root directory (**not the document root, it has to be set to httpdocs**)
+- download the project into your vhost root directory (**not the document root, it has to be set to `web`**)
 
     ```
     composer create-project faktiva/php-admin-tk /var/www/your-admin-vhost

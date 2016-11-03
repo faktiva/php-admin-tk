@@ -69,8 +69,8 @@
     ],
     "extra": {
         "installer-paths": {
-            "./httpdocs/tools/OPcache_GUI": ["amnuts/opcache-gui"],
-            "./httpdocs/tools/PHP_error_log": ["amnuts/phperror-gui"]
+            "./web/tools/OPcache_GUI": ["amnuts/opcache-gui"],
+            "./web/tools/PHP_error_log": ["amnuts/phperror-gui"]
         }
     },
     "scripts": {
@@ -89,7 +89,7 @@
         ],
 
         "post-install-cmd": [
-            "php -r '@mkdir(__DIR__.\"/httpdocs/tools\", 0777, true);'",
+            "php -r '@mkdir(__DIR__.\"/web/tools\", 0777, true);'",
             "@phpinfo",
             "@errorgui",
             "@adminer",
@@ -98,20 +98,20 @@
         ],
 
         "phpinfo": [
-            "php -r 'file_put_contents(__DIR__.\"/httpdocs/tools/PHP_info.php\", \"<?php\n\nphpinfo();\n\");'"
+            "php -r 'file_put_contents(__DIR__.\"/web/tools/PHP_info.php\", \"<?php\n\nphpinfo();\n\");'"
         ],
         "errorgui": [
-            "php -r 'chdir(__DIR__.\"/httpdocs/tools/PHP_error_log\"); @symlink(\"phperror-gui.php\", \"index.php\");'"
+            "php -r 'chdir(__DIR__.\"/web/tools/PHP_error_log\"); @symlink(\"phperror-gui.php\", \"index.php\");'"
         ],
         "adminer": [
-            "php -r 'chdir(__DIR__.\"/httpdocs/tools\"); @symlink(array_shift(glob(\"../../vendor/vrana/adminer/adminer*.php\")), \"Adminer.php\");'",
-            "php -r '$f=__DIR__.\"/httpdocs/tools/Adminer.php\"; $c=file_get_contents($f); $c=preg_replace(\"#(header\\(\\\"X-Frame-Options: deny\\\"\\);)#\", \"\", $c); file_put_contents($f, $c);'"
+            "php -r 'chdir(__DIR__.\"/web/tools\"); @symlink(array_shift(glob(\"../../vendor/vrana/adminer/adminer*.php\")), \"Adminer.php\");'",
+            "php -r '$f=__DIR__.\"/web/tools/Adminer.php\"; $c=file_get_contents($f); $c=preg_replace(\"#(header\\(\\\"X-Frame-Options: deny\\\"\\);)#\", \"\", $c); file_put_contents($f, $c);'"
         ],
         "redisadmin": [
-            "php -r 'chdir(__DIR__.\"/httpdocs/tools\"); @symlink(\"../../vendor/faktiva/php-redis-admin/public/\", \"Redis_admin\");'"
+            "php -r 'chdir(__DIR__.\"/web/tools\"); @symlink(\"../../vendor/faktiva/php-redis-admin/web/\", \"Redis_admin\");'"
         ],
         "memcacheadmin": [
-            "php -r 'chdir(__DIR__.\"/httpdocs/tools\"); @symlink(\"../../vendor/hgschmie/phpmemcacheadmin/\", \"phpMemcachedAdmin\");'"
+            "php -r 'chdir(__DIR__.\"/web/tools\"); @symlink(\"../../vendor/hgschmie/phpmemcacheadmin/\", \"phpMemcachedAdmin\");'"
         ]
     }
 }

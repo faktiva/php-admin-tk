@@ -22,7 +22,7 @@ umask(0);
 
 require_once __DIR__.'/vendor/autoload.php';
 
-define('BASE_DIR', __DIR__.'/httpdocs');
+define('BASE_DIR', __DIR__.'/web');
 define('BASE_URI', rtrim(dirname($_SERVER['PHP_SELF']), '/'));
 
 define('TOOLS_DIR', BASE_DIR.'/tools');

@@ -21,7 +21,7 @@ EOF;
 Symfony\CS\Fixer\Contrib\HeaderCommentFixer::setHeader($header);
 
 $finder = Symfony\CS\Finder::create()
-    ->exclude('httpdocs/tools')
+    ->exclude('web/tools')
     ->in(__DIR__)
     ;
 
