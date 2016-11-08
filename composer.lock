@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2ef7b1315395ad53543c36fc52a33d46",
-    "content-hash": "dab28928209f0516a72d885b3f59a977",
+    "hash": "bb3a8fa8aa6620554137fb817990dea7",
+    "content-hash": "62508657b03d566fb33178576eebc2e3",
     "packages": [
         {
             "name": "amnuts/opcache-gui",
@@ -154,7 +154,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hgschmie/phpmemcacheadmin",
-                "reference": "7f935bf"
+                "reference": "7f935bffac60dba6a02e5645116e6628a60108cd"
             },
             "type": "library"
         },
