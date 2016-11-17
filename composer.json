@@ -8,9 +8,16 @@
         {
             "name": "Emiliano 'AlberT' Gabrielli",
             "email": "albert@faktiva.com",
+            "homepage": "http://faktiva.com",
             "role": "Developer"
         }
     ],
+    "support": {
+        "issues": "https://github.com/faktiva/php-admin-tk/issues",
+        "source": "https://github.com/faktiva/php-admin-tk/releases/latest",
+        "email": "support@faktiva.com"
+    },
+
     "minimum-stability": "stable",
     "config": {
         "bin-dir": "bin",
@@ -24,9 +31,9 @@
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^1.12",
-        "symfony/var-dumper": "^2.8 || ^3.0",
-        "symfony/debug": "^2.8 || ^3.0",
-        "sensiolabs/security-checker": "^4.0"
+        "sensiolabs/security-checker": "^4.0",
+        "symfony/var-dumper": "^2.0 || ^3.0",
+        "symfony/debug": "^2.0 || ^3.0"
     },
     "require": {
         "php": ">=5.4.0",
@@ -75,7 +82,7 @@
     },
     "scripts": {
         "chk-cs": [
-            "bin/php-cs-fixer -vvv fix --dry-run"
+            "php bin/php-cs-fixer -vvv fix --dry-run"
         ],
         "chk-sec": [
             "php bin/security-checker -vv security:check"
@@ -85,7 +92,7 @@
             "@chk-sec"
         ],
         "fix-cs": [
-            "bin/php-cs-fixer -vvv fix"
+            "php bin/php-cs-fixer -vvv fix"
         ],
 
         "post-install-cmd": [
