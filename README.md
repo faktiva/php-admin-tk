@@ -8,7 +8,7 @@
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/faktiva/php-admin-tk.svg?style=flat)](http://isitmaintained.com/project/faktiva/php-admin-tk "Average time to resolve an issue")
 [![composer.lock](https://poser.pugx.org/faktiva/php-admin-tk/composerlock?style=flat)](https://packagist.org/packages/faktiva/php-admin-tk)
 [![Dependencies Status](https://img.shields.io/librariesio/github/faktiva/php-admin-tk.svg?maxAge=3600&style=flat)](https://libraries.io/github/faktiva/php-admin-tk)
-[![License](https://img.shields.io/packagist/l/faktiva/php-admin-tk.svg?style=flat)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License](https://img.shields.io/packagist/l/faktiva/php-admin-tk.svg?style=flat)](https://tldrlegal.com/license/mit-license)
 
 [![Join the chat at https://gitter.im/faktiva/php-admin-tk](https://img.shields.io/badge/Gitter-CHAT%20NOW-brightgreen.svg?style=flat)](https://gitter.im/faktiva/php-admin-tk)
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/faktiva/php-admin-tk.svg?style=social)](https://twitter.com/intent/tweet?text=Fantastic %23Faktiva "PHP Admin ToolKit"&url=https://github.com/faktiva/php-admin-tk)
@@ -77,14 +77,4 @@ ___
     ```
 
 Enjoy ;)
-
-
-## License
-
-![Creative Commons BY-SA License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)
-
-
-**[php-admin-tk](https://github.com/faktiva/php-admin-tk)** is licensed under a **Creative Commons [Attribution-ShareAlike](http://creativecommons.org/licenses/by-sa/4.0/) 4.0 International License**.
-
-Permissions beyond the scope of this license may be available contacting the author.
 

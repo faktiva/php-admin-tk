@@ -2,7 +2,7 @@
     "name": "faktiva/php-admin-tk",
     "description": "Simple wrapper around a bounce of tools intended to be installed on a web server vhost for administrative purposes",
     "homepage": "https://github.com/faktiva/php-admin-tk",
-    "license": "CC-BY-SA-4.0",
+    "license": "MIT",
     "type": "project",
     "authors": [
         {
