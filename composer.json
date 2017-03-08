@@ -37,7 +37,7 @@
         "mnsami/composer-custom-directory-installer": "^1.0",
         "amnuts/phperror-gui": "^1.0",
         "amnuts/opcache-gui": "^2.2",
-        "faktiva/php-redis-admin": "^1.2",
+        "faktiva/php-redis-admin": "^1.2.3",
         "vrana/adminer": "^4.2",
         "hgschmie/phpmemcacheadmin": "^1.2.2"
     },
@@ -79,17 +79,17 @@
     },
     "scripts": {
         "chk-cs": [
-            "php bin/php-cs-fixer -vvv fix --dry-run"
+            "php-cs-fixer -vvv fix --dry-run"
         ],
         "chk-sec": [
-            "php bin/security-checker -vv security:check"
+            "security-checker -vv security:check"
         ],
         "check": [
             "@chk-cs",
             "@chk-sec"
         ],
         "fix-cs": [
-            "php bin/php-cs-fixer -vvv fix"
+            "php-cs-fixer -vvv fix"
         ],
 
         "post-install-cmd": [
@@ -112,9 +112,9 @@
             "php -r '$f=__DIR__.\"/web/tools/Adminer.php\"; $c=file_get_contents($f); $c=preg_replace(\"#(header\\(\\\"X-Frame-Options: deny\\\"\\);)#\", \"\", $c); file_put_contents($f, $c);'"
         ],
         "redisadmin": [
-            "cd \"vendor/faktiva/php-redis-admin/\" ; php ../../../composer.phar --no-dev install",
-            "php -r 'chdir(__DIR__.\"/web/tools\"); @symlink(\"../../vendor/faktiva/php-redis-admin/web/\", \"Redis_admin\");'",
-            "php -r 'copy(__DIR__.\"/app/config/php-redis-admin.config.php\", __DIR__.\"/vendor/faktiva/php-redis-admin/app/config/config.php\");'"
+            "@composer --no-dev install -d ./vendor/faktiva/php-redis-admin",
+            "php -r 'copy(__DIR__.\"/app/config/php-redis-admin.config.php\", __DIR__.\"/vendor/faktiva/php-redis-admin/app/config/config.php\");'",
+            "php -r 'chdir(__DIR__.\"/web/tools\"); @symlink(\"../../vendor/faktiva/php-redis-admin/web/\", \"Redis_admin\");'"
         ],
         "memcacheadmin": [
             "php -r 'chdir(__DIR__.\"/web/tools\"); @symlink(\"../../vendor/hgschmie/phpmemcacheadmin/\", \"phpMemcachedAdmin\");'"
