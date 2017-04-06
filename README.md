@@ -11,7 +11,7 @@
 [![License](https://img.shields.io/packagist/l/faktiva/php-admin-tk.svg?style=flat)](https://tldrlegal.com/license/mit-license)
 
 [![Join the chat at https://gitter.im/faktiva/php-admin-tk](https://img.shields.io/badge/Gitter-CHAT%20NOW-brightgreen.svg?style=flat)](https://gitter.im/faktiva/php-admin-tk)
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/faktiva/php-admin-tk.svg?style=social)](https://twitter.com/intent/tweet?text=Fantastic %23Faktiva "PHP Admin ToolKit"&url=https://github.com/faktiva/php-admin-tk)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/faktiva/php-admin-tk.svg?style=social)](https://twitter.com/intent/tweet?text=Fantastic+%23Faktiva+"PHP+Admin+ToolKit"&url=https://github.com/faktiva/php-admin-tk)
 
 ____
 
